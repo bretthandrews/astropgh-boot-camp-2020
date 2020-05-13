@@ -1,45 +1,40 @@
-2016 Python Bootcamp for UW Astronomy and Physics
-=================================================
+Welcome to the 2020 AstroPGH Research Boot Camp and Weekly Seminar Series for summer undergraduate students and early PhD students new to research.  This program is designed to help you learn the basics of research, including coding, statistics, writing, and presenting.
 
-We will be using materials from Jake Vanderplas's 2014 Python crash course. 
+We will start with a 1+3 day Python coding boot camp to help get everyone off the ground with their research.
 
-The lessons that we will cover include: 
-* [Basic training](https://github.com/bmorris3/2014_fall_ASTR599/blob/master/notebooks/01_basic_training.ipynb)
-* [Advanced data sctructures](https://github.com/bmorris3/2014_fall_ASTR599/blob/master/notebooks/02_advanced_data_structures.ipynb)
-* [iPython intro](https://github.com/bmorris3/2014_fall_ASTR599/blob/master/notebooks/03_IPython_intro.ipynb)
-* [Functions and modules](https://github.com/bmorris3/2014_fall_ASTR599/blob/master/notebooks/04_Functions_and_modules.ipynb)
-* [Numpy intro](https://github.com/bmorris3/2014_fall_ASTR599/blob/master/notebooks/05_NumpyIntro.ipynb)
-* [Matplotlib intro](https://github.com/bmorris3/2014_fall_ASTR599/blob/master/notebooks/06_MatplotlibIntro.ipynb)
-* [Git intro](https://github.com/bmorris3/2014_fall_ASTR599/blob/master/notebooks/07_GitIntro.ipynb)
-* [Optimization](https://github.com/bmorris3/2014_fall_ASTR599/blob/master/notebooks/14_Optimization.ipynb)
+Then we will have a weekly seminar series to discuss more advanced topics, including communication skills (reading, plotting, storytelling, and writing) that become more important as the summer goes on. My hope is to create a sense of community in spite of the remote operations this year, so that you can help others, can seek help, and can interact with each other.
 
-*** 
+## Boot Camp
+### Python Installation
+Please install Python 3 before the Boot Camp. I recommend using the [Anaconda](https://www.anaconda.com/products/individual package manager) **_for Python 3.7_** and then install the following packages in the terminal:
+```bash
+conda install numpy scipy astropy matplotlib jupyter ipython
+conda install -c astropy astroquery
+```
 
-Introduction to Scientific Computing in Python
-==============================================
+### Test Your Installation
 
-*University of Washington ASTR 599/AMATH 500*
+1. Open a new terminal.
+2. Type `ipython` into the terminal to open an interactive python session (the prompt should say `In [1]:`).
+3. Copy this code:
+```python
+import numpy
+import scipy
+import astropy
+import matplotlib
+import astroquery
+```
+4. Type into the iPython shell the word `paste`, and press enter.
+5. If no errors are raised, you're ready for bootcamp. You may close the terminal window.
 
-**Jake Vanderplas**
+If you are having difficulties with installation, please do not hesitate to reach out to Brett Andrews on Slack or via email.
 
-**University of Washington**
 
-**Fall, 2014**
+### Schedule
 
-This repository will contain all the curriculum and materials for the Astronomy 599/Applied Math 500 seminar, Fall 2014.
-
-See the [Course Website](http://www.astro.washington.edu/vanderplas/Astr599_2014/)
-for more information.
-
-Instructor
-----------
-[Jake Vanderplas](http://www.astro.washington.edu/vanderplas) works in the eScience Institute, an interdisciplinary institute focused on data and computing-intensive science at University of Washington. His background is in Astronomy, and he is a regular contributor and maintainer of several well-known Python tools, including SciPy and Scikit-Learn.
-
-Class Location
----------------
-[PAB](http://uw.edu/maps/?pab) 356 / 356A
-
-Meeting times
--------------
-- Two-day “Boot Camp”: September 22-23 9:00am-4:00pm
-- Weekly meetings: Mondays, 3:00-4:00pm throughout Fall quarter
+| Time | Monday | Tuesday | Wednesday | Thursday |
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| 9:00-10:15 | Python Basics | Numpy II | Astropy I | Git |
+| 10:45-12:00 | Data Structures | Linear Regression | Astropy II | GitHub |
+| 1:00-2:15 | Matplotlib I | Resampling | Visualization | Pandas |
+| 2:45-4:00 | Numpy I | Matplotlib II | Debugging | Altair |
